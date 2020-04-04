@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #616161;
+}
+.droplet{
+    background-color: #0288d1;
+    height: 150px; /*altura*/
+    width: 150px; /*largura*/
+    border-radius: 0% 50% 50% 50%;
+    transform: rotate(45deg);
+    box-shadow: -25px 10px 5px -10px #03a9f4 inset;/*Borda ao lado*/
+}
