@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(0, 34, 187), rgb(193, 159, 255), rgb(135, 4, 175));
+}
+h1{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animacao 5s linear infinite;
+}
+@keyframes animacao{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
