@@ -1,0 +1,11 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    border-right: 300px solid transparent;
+    border-left: 300px solid transparent;
+    border-bottom: 350px solid red;
+}
