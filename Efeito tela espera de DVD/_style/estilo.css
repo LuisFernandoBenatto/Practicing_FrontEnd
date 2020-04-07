@@ -1,0 +1,54 @@
+body{ 
+    height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+.tela{
+    background: #000000;
+    height: 480px;
+    width: 640px;
+}
+.ball{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    animation: ball 12s infinite;
+}
+@keyframes ball{
+    0%{
+        background: red;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background: blue;
+        top: 0px;
+        left: 540px;
+    }
+    50%{
+        background: yellow;
+        top: 380px;
+        left: 0px;
+    }
+    75%{
+        background: green;
+        top: 380px;
+        left: 540px;
+    }
+    100%{
+        background: red;
+        top: 0px;
+        left: 0px;
+    }
+}
