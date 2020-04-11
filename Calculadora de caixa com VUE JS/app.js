@@ -60,13 +60,13 @@ var app = new Vue({
         },
         moeda_5: function(){
             this.resultado_moeda_5 = this.moeda_5 * 0.05;
-        },
-        computed:{
-            soma: function(){
-                var valor = 0.0;
-                valor = this.resultado_cedula_100 + this.resultado_cedula_50 + this.resultado_cedula_20 + this.resultado_cedula_10 +  this.resultado_cedula_5 + this.resultado_cedula_2 + this.resultado_moeda_1 + this.resultado_moeda_50 + this.resultado_moeda_25 + this.resultado_moeda_10 + this.resultado_moeda_5;
-                return valor;
-            }
+        }
+    },
+    computed:{
+        soma: function(){
+            var valor = 0.0;
+            valor = this.resultado_cedula_100 + this.resultado_cedula_50 + this.resultado_cedula_20 + this.resultado_cedula_10 +  this.resultado_cedula_5 + this.resultado_cedula_2 + this.resultado_moeda_1 + this.resultado_moeda_50 + this.resultado_moeda_25 + this.resultado_moeda_10 + this.resultado_moeda_5;
+            return valor;
         }
     }
 })
