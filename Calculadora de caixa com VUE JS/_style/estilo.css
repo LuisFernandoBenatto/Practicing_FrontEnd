@@ -1,0 +1,26 @@
+body{
+    background: rgb(240, 30, 102);
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.input-group{
+    display: flex;
+    justify-content: space-around;
+}
+.input-group > label {
+    width: 100px;
+}
+.input-group > span {
+    width: 100px;
+}
+.input-group input{
+    background: none;
+    border: solid 2px #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
