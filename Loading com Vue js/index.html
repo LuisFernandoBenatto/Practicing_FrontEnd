@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="_style/estilo.css">
+    <title>LOADING em requisição a uma REST API</title>
+</head>
+<body>
+    <div id="app">
+        <!--<p>{{ message }}</p>-->
+        <div v-show="showLoad" class="load">
+            <div class="spin"></div>
+            <div class="loading">Carregando</div>
+        </div>
+        <button v-on:click="loadApi()">Carregar Fotos</button>
+        <ul>
+            <li v-for="img in api">
+                <img :src="img.thumbnailUrl" alt=""/>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
