@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+}
+#MudarTema{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    -webkit-appearance: none;
+    outline: none;
+}
+#MudarTema::before{
+    content: attr(title);
+    font-size: 20px;
+}
+.conteudo{
+    padding: 10px;
+    height: 100%;
+    color: var(--corTexto);
+    background-color: var(--corFundo);
+    transition: 2s;
+}
+#MudarTema:checked + .conteudo{
+    --corTexto: white;
+    --corFundo: black;
+}
+#MudarTema:checked::before{
+    content: '☀️';
+}
