@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="_style/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Calculadora de caixa com VUE JSt</title>
+</head>
+<body>
+    <div id="app">
+
+        <div class="input-group">
+            <label for="">R$ 100.00</label>
+            <input v-model="cedula_100" type="number" name="" id="">
+            <span>R$ {{resultado_cedula_100}} .00</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 50.00</label>
+            <input v-model="cedula_50" type="number" name="" id="">
+            <span>R$ {{resultado_cedula_50}} .00</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 20.00</label>
+            <input v-model="cedula_20" type="number" name="" id="">
+            <span>R$ {{resultado_cedula_20}} .00</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 10.00</label>
+            <input v-model="cedula_10" type="number" name="" id="">
+            <span>R$ {{resultado_cedula_10}} .00</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 5.00</label>
+            <input v-model="cedula_5" type="number" name="" id="">
+            <span>R$ {{resultado_cedula_5}} .00</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 2.00</label>
+            <input v-model="cedula_2" type="number" name="" id="">
+            <span>R$ {{resultado_cedula_2}} .00</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 1.00</label>
+            <input v-model="moeda_1" type="number" name="" id="">
+            <span>R$ {{resultado_moeda_1}} .00</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 0.50</label>
+            <input v-model="moeda_50" type="number" name="" id="">
+            <span>R$ {{resultado_moeda_50}}0</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 0.25</label>
+            <input v-model="moeda_25" type="number" name="" id="">
+            <span>R$ {{resultado_moeda_25}}</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 0.10</label>
+            <input v-model="moeda_10" type="number" name="" id="">
+            <span>R$ {{resultado_moeda_10}}</span>
+        </div>
+        <div class="input-group">
+            <label for="">R$ 0.05</label>
+            <input v-model="moeda_5" type="number" name="" id="">
+            <span>R$ {{resultado_moeda_5}}</span>
+        </div>
+
+
+        <h1>R$ {{ soma }}</h1>
+    </div>
+    
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"> </script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

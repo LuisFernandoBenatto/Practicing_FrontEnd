@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RegEx</title>
+</head>
+<body id="body">
+    <h1>Exemplo de RegEx para Validação</h1>
+    <div id="div">
+        <form action="">
+            <div>
+                <label for="placa">Placa</label>
+                <input 
+                    type="text" 
+                    id="placa" 
+                    class="input"
+                    pattern="[a-zA-B]{3}[0-9]{4}"
+                />
+            </div>
+            <div>
+                <label for="vel">Velocidade</label>
+                <input 
+                    type="text" 
+                    id="vel" 
+                    class="input"
+                    pattern="[012]?[0-9]{1,2}"
+                />
+            <div>
+                <label for="date">Data</label>
+                <input 
+                    type="text" 
+                    id="date" 
+                    class="input"
+                    pattern="[0-9]{2}\/(0?[1-9])|(1[0-2])\/[0-9]{4}"
+                />
+            </div>
+            <input id="enviar" type="submit"/>
+        </form>
+    </div>
+</body>
+</html>
