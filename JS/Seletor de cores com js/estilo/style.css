@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(211, 211, 211);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+#resultado{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border:solid 4px #000000;
+    border-radius: 100px;
+}

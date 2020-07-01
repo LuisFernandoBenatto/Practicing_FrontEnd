@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+}
+#div_text{
+    border:solid 5px rgb(136, 33, 33);
+    width: 80%;
+    height: 40%;
+    background-color: #ffffff;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+button{
+    font-size: 40px;
+    height: 120px;
+    width: 300px;
+    border-radius: 100px;
+    outline: none;
+    background-color: rgb(136, 33, 33);
+    margin-top: 20px;
+}
+button:hover{
+    background-color: rgb(200, 78, 78);
+}
