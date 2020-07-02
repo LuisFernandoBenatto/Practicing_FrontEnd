@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cores input{
+    background: none;
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+}
+.link{
+    padding: 10px;
+}
+.link button, input{
+    font-size: 28px;
+    border: 1px solid #000000;
+    outline: none;
+    background: none;
+    padding: 5px;
+}
+.link button{
+    border-radius: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+.link button:hover{
+    background-color: #818181;
+}
+#download{
+    margin: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color:#000000;
+    border-radius: 100px;
+}
+#download:hover{
+    border: none;
+    background-color: #818181;
+}
