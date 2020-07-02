@@ -1,0 +1,25 @@
+body{
+    background: rgb(85, 66, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    width: 400px;
+    border-radius: 100px;
+    color: rgb(85, 66, 255);
+}
+.btn:hover{
+    background-image: linear-gradient(90deg,#448aff, #00bcd4,#448aff );
+    color: #ffffff;
+    transition: 0.7s linear;
+}
