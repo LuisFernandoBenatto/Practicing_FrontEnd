@@ -1,0 +1,64 @@
+body{
+    background: linear-gradient( #0d700a, #bbffb5);
+    font-family: cursive;
+    font-size: 24px;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flor span{
+    color: #ffffff;
+    line-height: 150px;
+    font-weight: 900;
+}
+.flor{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(233, 255, 110);
+    border-radius: 100px;
+}
+.folha{
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    background-color: rgb(161, 1, 87);
+    text-align: center;
+    border-radius: 100px;
+    z-index: -1;
+    transition:  all 0.7s linear;
+}
+.folha:nth-child(1){
+    bottom: -50px;
+}
+.folha:nth-child(2){
+    bottom: -50px;
+    left: 0px;
+    transform: rotate(90deg);
+}
+.folha:nth-child(3){
+    bottom: -50px;
+    transform: rotate(180deg);
+}
+.folha:nth-child(4){
+    left: 0px;
+    bottom: -50px;
+    transform: rotate(-90deg);
+}
+.flor:hover {
+    background-color: rgb(246, 253, 145);
+}
+.flor:hover .folha:nth-child(1){
+    bottom: 0px;
+}
+.flor:hover .folha:nth-child(2){
+    left: 50px;
+}
+.flor:hover .folha:nth-child(3){
+    bottom: -100px;
+}
+.flor:hover .folha:nth-child(4){
+    left: -50px;
+}
