@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Filtros de imagem com css</title>
+</head>
+<body>
+    <div id="app">
+        <label for="">Endereço da Imagem</label>
+        <input v-model="img" type="text" />
+        <img class="res" :class="filtro" :src="img" alt="" />
+        <div class="botoes">
+            <img :src="img" @click ="filtro = 'img-blur'" class="btn img-blur" alt="">
+            <img :src="img" @click ="filtro = 'img-brightness'" class="btn img-brightness" alt="">
+            <img :src="img" @click ="filtro = 'img-contrast'" class="btn img-contrast" alt="">
+            <img :src="img" @click ="filtro = 'img-grayscale'" class="btn img-grayscale" alt="">
+            <img :src="img" @click ="filtro = 'img-invert'" class="btn img-invert" alt="">
+            <img :src="img" @click ="filtro = 'img-opacity'" class="btn img-opacity" alt="">
+            <img :src="img" @click ="filtro = 'img-saturate'" class="btn img-saturate" alt="">
+            <img :src="img" @click ="filtro = 'img-sepia'" class="btn img-sepia" alt="">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
