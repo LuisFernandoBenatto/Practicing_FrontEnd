@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=Teko:wght@400;500&family=UnifrakturCook:wght@700&display=swap');
+body{
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 30%;
+}
+h1{
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    width: 50%;
+    color: #a6c9ea;
+    font-size: 100px;
+    font-family: 'UnifrakturCook', cursive;
+}
+ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+}
+ul li{
+    color: #495a68;
+    font-size: 60px;
+    list-style: none;
+    position: relative;
+    cursor: default;
+    font-family: 'Teko', sans-serif;
+    line-height: 40px;
+    transform: scale(1, 0.4);
+}
+ul li:hover{
+    color: #a6c9ea;
+}
+ul li:hover::before{
+    position: absolute;
+    left: -70px;
+    content: " ";
+    display: inline-block;
+    background-image: url("icone.svg");
+    background-size: 70px;
+    height: 70px;
+    width: 70px;
+}
