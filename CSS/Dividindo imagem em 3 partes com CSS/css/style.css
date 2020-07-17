@@ -1,0 +1,35 @@
+body{
+    background: #0088cc; /*#00ccaa*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+}
+.foto{
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    width: 570px;
+}
+.foto [class*="corte"]{
+    height: 190px;
+    width: 570px;
+    object-fit: cover;
+    transition: all 1s;
+}
+.foto .corte1{
+    object-position: top;
+}
+.foto .corte3{
+    object-position: bottom;
+}
+.foto:hover .corte1{
+    transform: translateX(100px);
+}
+.foto:hover .corte2{
+    padding: 10px;
+}
+.foto:hover .corte3{
+    transform: translateX(-100px);
+}
