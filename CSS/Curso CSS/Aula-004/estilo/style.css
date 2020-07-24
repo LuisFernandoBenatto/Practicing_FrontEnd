@@ -1,0 +1,44 @@
+body{
+    margin: 70px;
+    margin-top: 10px;
+
+    font-family: serif;
+    color: #3b3b3b;
+}
+.container{
+    position: relative;
+    border: solid 2px #000000;
+    padding: 20px;
+    padding-top: 0px;
+}
+h1{
+    margin-top: 10px;
+    font-size: 100px;
+    border: solid 2px #000000;
+    text-align: center;
+    background-color: #cccccc
+}
+p{
+    font-size: 20px;
+    color: #000000;
+}
+#textTwo{
+    font-size: 20px;
+    color: #636262;
+}
+p[title]{
+    border: solid 2px #000000;
+    padding: 20px;
+    background-color: #a5a5a5;
+}
+ul li{
+    list-style: square;
+    color: #000000;
+    font-size: 20px;
+}
+a{
+    color: #261570;
+    font-size: 20px;
+    border: solid 1px #000000;
+    padding: 10px;
+}

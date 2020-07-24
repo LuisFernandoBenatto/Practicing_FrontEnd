@@ -1,0 +1,12 @@
+h1{
+    color: #ae0dee; /*cor da frases ou palavras*/ 
+    font-family: 'Times New Roman', Times, serif; /*familia da fonte*/
+    font-size: 50px; /*Tamanho da fonte*/
+}
+p{
+    text-align: justify; /*alinhamento de texto*/
+    font-family: serif;
+}
+body{
+    background-color: #e8afff; /*Cor do fundo*/
+}
